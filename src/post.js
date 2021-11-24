@@ -1,11 +1,9 @@
 import React ,{ Component } from "react";
 import { Text, View,Image ,FlatList,StyleSheet} from "react-native";
-import Pagination,{Icon,Dot} from 'react-native-pagination';
 
 class AllPosts extends Component{
     constructor(props){
         super(props)
-        console.log(props)
             this.state = {
          data :[]
     };
@@ -19,10 +17,8 @@ class AllPosts extends Component{
                data:data1,
                viewableItems:''
            })
-          console.log(data1)
     } 
     postPage=(item)=>{
-        console.log(item)
         this.props.navigation.navigate('Post Detail', { details: item })
     }
     onViewableItemsChanged = ({ viewableItems, changed }) =>this.setState({viewableItems})
@@ -48,14 +44,6 @@ class AllPosts extends Component{
     
    
   />
-    {/* <Pagination
-             dotThemeLight //<--use with backgroundColor:"grey"
-            listRef={this.refs}//to allow React Native Pagination to scroll to item when clicked  (so add "ref={r=>this.refs=r}" to your list)
-            // paginationVisibleItems={this.state.viewableItems}//needs to track what the user sees
-            paginationItems={this.state.data}//pass the same list as data
-            paginationItemPadSize={10} //num of items to pad above and below your visable items
-            horizontal={true}
-          /> */}
     </div>
   </View>
   )

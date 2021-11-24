@@ -4,7 +4,6 @@ import {Text, View,Image ,FlatList} from "react-native";
 class Post extends Component{
     constructor(props){
         super(props)
-        console.log(props.route.params.details)
     }
     render(){
   return(
