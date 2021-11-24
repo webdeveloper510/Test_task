@@ -1,0 +1,15 @@
+.post {
+    display: flex;
+    padding: 7px;
+}
+
+.post h4 {
+    padding: 0px 20px;
+}
+
+.post img {border: 1px solid black !important;border-radius: 50%;}
+
+.postbody {
+    margin-left: 75px;
+    padding: 10px;
+}
