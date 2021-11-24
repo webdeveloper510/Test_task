@@ -1,6 +1,7 @@
 .post {
     display: flex;
     padding: 7px;
+    margin-top: 5px;
 }
 
 .post h4 {
@@ -12,4 +13,18 @@
 .postbody {
     margin-left: 75px;
     padding: 10px;
+}
+.post1 {
+display: block;
+padding: 7px;
+margin-top:5px;
+text-align:center;
+}
+.post1 h4 {
+    padding: 0px 20px;
+    text-align:center;
+}
+.postbody1 {
+    padding: 0px 20px;
+    text-align:center;
 }

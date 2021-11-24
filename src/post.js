@@ -1,6 +1,6 @@
 import React ,{ Component } from "react";
 import { Text, View,Image ,FlatList,StyleSheet} from "react-native";
-
+import "./style.css";
 class AllPosts extends Component{
     constructor(props){
         super(props)
@@ -30,11 +30,11 @@ class AllPosts extends Component{
     data={this.state.data}
     renderItem={({item})=>  <View >
            <div  onClick={()=>this.postPage(item)}>
-               <div className="post" style={{ display: 'flex', padding: '7px',marginTop:'5px'}}>
+               <div className="post">
             <Image source={{uri: 'https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg'}} style={{width: 60, height: 60 ,borderRadius: '50%'}} />   
-               <Text><h4 style={{padding: '0px 20px'}}>{item.title} </h4></Text><br/>
+               <Text><h4>{item.title} </h4></Text><br/>
                </div>
-               <div className="postbody" style={{ marginLeft: '75px', padding: '10px'}} >
+               <div className="postbody" >
                  <Text>{item.body}</Text>
                  </div>
             </div>
