@@ -48,14 +48,14 @@ class AllPosts extends Component{
     
    
   />
-    <Pagination
+    {/* <Pagination
              dotThemeLight //<--use with backgroundColor:"grey"
             listRef={this.refs}//to allow React Native Pagination to scroll to item when clicked  (so add "ref={r=>this.refs=r}" to your list)
             // paginationVisibleItems={this.state.viewableItems}//needs to track what the user sees
             paginationItems={this.state.data}//pass the same list as data
             paginationItemPadSize={10} //num of items to pad above and below your visable items
             horizontal={true}
-          />
+          /> */}
     </div>
   </View>
   )
