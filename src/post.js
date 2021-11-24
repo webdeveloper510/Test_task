@@ -14,24 +14,23 @@ class AllPosts extends Component {
     );
     let data1 = await response.json();
     this.setState({
-      data: data1,
-      viewableItems: ''
+      data: data1
     })
   }
   postPage = (item) => {
     this.props.navigation.navigate('Post Detail', { details: item })
   }
-  onViewableItemsChanged = ({ viewableItems, changed }) => this.setState({ viewableItems })
+
   render() {
     return (
       <View>
         <div>
-          <FlatList style={{ backgroundColor: "#ffff" }}
+          <FlatList className="flatList"
             data={this.state.data}
             renderItem={({ item }) => <View >
               <div onClick={() => this.postPage(item)}>
                 <div className="post">
-                  <Image source={{ uri: 'https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg' }} style={{ width: 60, height: 60, borderRadius: '50%' }} />
+                  <Image source={{ uri: 'https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg' ,width: 60, height: 60}} />
                   <Text><h4>{item.title} </h4></Text><br />
                 </div>
                 <div className="postbody" >
