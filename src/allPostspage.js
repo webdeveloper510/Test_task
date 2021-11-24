@@ -9,7 +9,7 @@ class Post extends Component {
     return (
       <View >
         <div className="post1">
-          <Image source={{ uri: 'https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg',width:350,height:350 }} />
+          <Image source={{ uri: 'https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg',height:350 }} />
           <Text>
             <h4>{this.props.route.params.details.title}</h4>
           </Text> <br />
